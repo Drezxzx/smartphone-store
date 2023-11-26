@@ -1,0 +1,1 @@
+const routeServer = location.origin + "/mvc_p_Colon/v06 Insert Into"

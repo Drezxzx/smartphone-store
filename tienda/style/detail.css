@@ -1,0 +1,148 @@
+
+.imagenes {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+    padding: 10px;
+    margin: 10px auto; 
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    height: 60vh; /* Altura de la tarjeta en relación al 60% de la ventana */
+    overflow: hidden;
+}
+
+
+main{
+    width: 100vh;
+    height: 100vh;
+}
+    .ficha-producto {
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        margin-left: 31%;
+        display: flex;
+        width: 150%; 
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+        border-radius: 10px;
+    }
+    .contenedor{
+        max-width: 100%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        
+    }
+    .contenedor img{
+        width: 100%;
+        height: auto;
+        max-width: 300px; 
+        
+    }
+
+    .imagenes {
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .informacion-producto {
+        padding: 10px;
+    }
+
+    .informacion-producto h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .informacion-producto p.descripcion {
+        font-size: 50px;
+        width: 400px;
+    }
+
+    .informacion-producto p.precio {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 30px 0;
+    }
+
+    .informacion-producto p.marcas {
+        font-size: 14px;
+        margin-top: 30px 0;
+    }
+
+    .boton {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .boton:hover {
+        background-color: #232426;
+    }
+    
+    .slider-container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+    
+    .slider {
+        display: flex; /* Mostrar elementos en línea */
+        transition: transform 0.3s ease; /* Animación de transición */
+    }
+    
+    .slider a {
+        flex: 0 0 calc(33.33% - 20px); /* Ancho fijo para cada elemento (ajusta según tus necesidades) */
+        margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    /* Oculta el desbordamiento horizontal */
+    body {
+        overflow-x: hidden;
+    }
+
+    .h1black{
+        color: black;
+        text-align: center;
+    }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Define una clase para mostrar el elemento con la animación */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 0.3s ease;
+}
+
+
+    
+    
